@@ -9,6 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
 
-@interface ViewController : GLKViewController
+@interface ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextView *log;
+
+@property (weak, nonatomic) IBOutlet UITextField *dir_path;
+@property (weak, nonatomic) IBOutlet UITextField *fs_path;
+@property (weak, nonatomic) IBOutlet UITextField *vs_path;
+@property (weak, nonatomic) IBOutlet UILabel *last_modified;
 
 @end
