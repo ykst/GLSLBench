@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEA01DEA18675E5200F18642 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA01DE918675E5200F18642 /* Foundation.framework */; };
+		CEA01DEC18675E5300F18642 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA01DEB18675E5300F18642 /* CoreGraphics.framework */; };
+		CEA01DEE18675E5300F18642 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA01DED18675E5300F18642 /* UIKit.framework */; };
+		CEA01DF018675E5300F18642 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA01DEF18675E5300F18642 /* GLKit.framework */; };
+		CEA01DF218675E5300F18642 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA01DF118675E5300F18642 /* OpenGLES.framework */; };
+		CEA01DF818675E5300F18642 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEA01DF618675E5300F18642 /* InfoPlist.strings */; };
+		CEA01DFA18675E5300F18642 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA01DF918675E5300F18642 /* main.m */; };
+		CEA01DFE18675E5300F18642 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA01DFD18675E5300F18642 /* AppDelegate.m */; };
+		CEA01E0118675E5300F18642 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA01DFF18675E5300F18642 /* Main_iPhone.storyboard */; };
+		CEA01E0418675E5300F18642 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA01E0218675E5300F18642 /* Main_iPad.storyboard */; };
+		CEA01E0618675E5300F18642 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = CEA01E0518675E5300F18642 /* Shader.fsh */; };
+		CEA01E0818675E5300F18642 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = CEA01E0718675E5300F18642 /* Shader.vsh */; };
+		CEA01E0B18675E5300F18642 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA01E0A18675E5300F18642 /* ViewController.m */; };
+		CEA01E0D18675E5300F18642 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA01E0C18675E5300F18642 /* Images.xcassets */; };
+		CEA01E1418675E5300F18642 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA01E1318675E5300F18642 /* XCTest.framework */; };
+		CEA01E1518675E5300F18642 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA01DE918675E5200F18642 /* Foundation.framework */; };
+		CEA01E1618675E5300F18642 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA01DED18675E5300F18642 /* UIKit.framework */; };
+		CEA01E1E18675E5300F18642 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEA01E1C18675E5300F18642 /* InfoPlist.strings */; };
+		CEA01E2018675E5300F18642 /* GLSLBenchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA01E1F18675E5300F18642 /* GLSLBenchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEA01E1718675E5300F18642 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEA01DDE18675E5200F18642 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA01DE518675E5200F18642;
+			remoteInfo = GLSLBench;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEA01DE618675E5200F18642 /* GLSLBench.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLSLBench.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA01DE918675E5200F18642 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEA01DEB18675E5300F18642 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEA01DED18675E5300F18642 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEA01DEF18675E5300F18642 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		CEA01DF118675E5300F18642 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		CEA01DF518675E5300F18642 /* GLSLBench-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLSLBench-Info.plist"; sourceTree = "<group>"; };
+		CEA01DF718675E5300F18642 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEA01DF918675E5300F18642 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEA01DFB18675E5300F18642 /* GLSLBench-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLSLBench-Prefix.pch"; sourceTree = "<group>"; };
+		CEA01DFC18675E5300F18642 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEA01DFD18675E5300F18642 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEA01E0018675E5300F18642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		CEA01E0318675E5300F18642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		CEA01E0518675E5300F18642 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		CEA01E0718675E5300F18642 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		CEA01E0918675E5300F18642 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CEA01E0A18675E5300F18642 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CEA01E0C18675E5300F18642 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CEA01E1218675E5300F18642 /* GLSLBenchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLSLBenchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA01E1318675E5300F18642 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CEA01E1B18675E5300F18642 /* GLSLBenchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLSLBenchTests-Info.plist"; sourceTree = "<group>"; };
+		CEA01E1D18675E5300F18642 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEA01E1F18675E5300F18642 /* GLSLBenchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLSLBenchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEA01DE318675E5200F18642 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA01DF218675E5300F18642 /* OpenGLES.framework in Frameworks */,
+				CEA01DEC18675E5300F18642 /* CoreGraphics.framework in Frameworks */,
+				CEA01DEE18675E5300F18642 /* UIKit.framework in Frameworks */,
+				CEA01DF018675E5300F18642 /* GLKit.framework in Frameworks */,
+				CEA01DEA18675E5200F18642 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA01E0F18675E5300F18642 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA01E1418675E5300F18642 /* XCTest.framework in Frameworks */,
+				CEA01E1618675E5300F18642 /* UIKit.framework in Frameworks */,
+				CEA01E1518675E5300F18642 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEA01DDD18675E5200F18642 = {
+			isa = PBXGroup;
+			children = (
+				CEA01DF318675E5300F18642 /* GLSLBench */,
+				CEA01E1918675E5300F18642 /* GLSLBenchTests */,
+				CEA01DE818675E5200F18642 /* Frameworks */,
+				CEA01DE718675E5200F18642 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEA01DE718675E5200F18642 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEA01DE618675E5200F18642 /* GLSLBench.app */,
+				CEA01E1218675E5300F18642 /* GLSLBenchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEA01DE818675E5200F18642 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEA01DE918675E5200F18642 /* Foundation.framework */,
+				CEA01DEB18675E5300F18642 /* CoreGraphics.framework */,
+				CEA01DED18675E5300F18642 /* UIKit.framework */,
+				CEA01DEF18675E5300F18642 /* GLKit.framework */,
+				CEA01DF118675E5300F18642 /* OpenGLES.framework */,
+				CEA01E1318675E5300F18642 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEA01DF318675E5300F18642 /* GLSLBench */ = {
+			isa = PBXGroup;
+			children = (
+				CEA01DFC18675E5300F18642 /* AppDelegate.h */,
+				CEA01DFD18675E5300F18642 /* AppDelegate.m */,
+				CEA01DFF18675E5300F18642 /* Main_iPhone.storyboard */,
+				CEA01E0218675E5300F18642 /* Main_iPad.storyboard */,
+				CEA01E0518675E5300F18642 /* Shader.fsh */,
+				CEA01E0718675E5300F18642 /* Shader.vsh */,
+				CEA01E0918675E5300F18642 /* ViewController.h */,
+				CEA01E0A18675E5300F18642 /* ViewController.m */,
+				CEA01E0C18675E5300F18642 /* Images.xcassets */,
+				CEA01DF418675E5300F18642 /* Supporting Files */,
+			);
+			path = GLSLBench;
+			sourceTree = "<group>";
+		};
+		CEA01DF418675E5300F18642 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEA01DF518675E5300F18642 /* GLSLBench-Info.plist */,
+				CEA01DF618675E5300F18642 /* InfoPlist.strings */,
+				CEA01DF918675E5300F18642 /* main.m */,
+				CEA01DFB18675E5300F18642 /* GLSLBench-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEA01E1918675E5300F18642 /* GLSLBenchTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEA01E1F18675E5300F18642 /* GLSLBenchTests.m */,
+				CEA01E1A18675E5300F18642 /* Supporting Files */,
+			);
+			path = GLSLBenchTests;
+			sourceTree = "<group>";
+		};
+		CEA01E1A18675E5300F18642 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEA01E1B18675E5300F18642 /* GLSLBenchTests-Info.plist */,
+				CEA01E1C18675E5300F18642 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEA01DE518675E5200F18642 /* GLSLBench */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA01E2318675E5300F18642 /* Build configuration list for PBXNativeTarget "GLSLBench" */;
+			buildPhases = (
+				CEA01DE218675E5200F18642 /* Sources */,
+				CEA01DE318675E5200F18642 /* Frameworks */,
+				CEA01DE418675E5200F18642 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLSLBench;
+			productName = GLSLBench;
+			productReference = CEA01DE618675E5200F18642 /* GLSLBench.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEA01E1118675E5300F18642 /* GLSLBenchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA01E2618675E5300F18642 /* Build configuration list for PBXNativeTarget "GLSLBenchTests" */;
+			buildPhases = (
+				CEA01E0E18675E5300F18642 /* Sources */,
+				CEA01E0F18675E5300F18642 /* Frameworks */,
+				CEA01E1018675E5300F18642 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEA01E1818675E5300F18642 /* PBXTargetDependency */,
+			);
+			name = GLSLBenchTests;
+			productName = GLSLBenchTests;
+			productReference = CEA01E1218675E5300F18642 /* GLSLBenchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEA01DDE18675E5200F18642 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = monadworks;
+				TargetAttributes = {
+					CEA01E1118675E5300F18642 = {
+						TestTargetID = CEA01DE518675E5200F18642;
+					};
+				};
+			};
+			buildConfigurationList = CEA01DE118675E5200F18642 /* Build configuration list for PBXProject "GLSLBench" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEA01DDD18675E5200F18642;
+			productRefGroup = CEA01DE718675E5200F18642 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEA01DE518675E5200F18642 /* GLSLBench */,
+				CEA01E1118675E5300F18642 /* GLSLBenchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEA01DE418675E5200F18642 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA01E0618675E5300F18642 /* Shader.fsh in Resources */,
+				CEA01E0418675E5300F18642 /* Main_iPad.storyboard in Resources */,
+				CEA01E0118675E5300F18642 /* Main_iPhone.storyboard in Resources */,
+				CEA01E0D18675E5300F18642 /* Images.xcassets in Resources */,
+				CEA01DF818675E5300F18642 /* InfoPlist.strings in Resources */,
+				CEA01E0818675E5300F18642 /* Shader.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA01E1018675E5300F18642 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA01E1E18675E5300F18642 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEA01DE218675E5200F18642 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA01E0B18675E5300F18642 /* ViewController.m in Sources */,
+				CEA01DFE18675E5300F18642 /* AppDelegate.m in Sources */,
+				CEA01DFA18675E5300F18642 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA01E0E18675E5300F18642 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA01E2018675E5300F18642 /* GLSLBenchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEA01E1818675E5300F18642 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA01DE518675E5200F18642 /* GLSLBench */;
+			targetProxy = CEA01E1718675E5300F18642 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEA01DF618675E5300F18642 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA01DF718675E5300F18642 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CEA01DFF18675E5300F18642 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA01E0018675E5300F18642 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		CEA01E0218675E5300F18642 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA01E0318675E5300F18642 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		CEA01E1C18675E5300F18642 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA01E1D18675E5300F18642 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEA01E2118675E5300F18642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEA01E2218675E5300F18642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEA01E2418675E5300F18642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLSLBench/GLSLBench-Prefix.pch";
+				INFOPLIST_FILE = "GLSLBench/GLSLBench-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEA01E2518675E5300F18642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLSLBench/GLSLBench-Prefix.pch";
+				INFOPLIST_FILE = "GLSLBench/GLSLBench-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CEA01E2718675E5300F18642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GLSLBench.app/GLSLBench";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLSLBench/GLSLBench-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GLSLBenchTests/GLSLBenchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CEA01E2818675E5300F18642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GLSLBench.app/GLSLBench";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLSLBench/GLSLBench-Prefix.pch";
+				INFOPLIST_FILE = "GLSLBenchTests/GLSLBenchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEA01DE118675E5200F18642 /* Build configuration list for PBXProject "GLSLBench" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA01E2118675E5300F18642 /* Debug */,
+				CEA01E2218675E5300F18642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA01E2318675E5300F18642 /* Build configuration list for PBXNativeTarget "GLSLBench" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA01E2418675E5300F18642 /* Debug */,
+				CEA01E2518675E5300F18642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEA01E2618675E5300F18642 /* Build configuration list for PBXNativeTarget "GLSLBenchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA01E2718675E5300F18642 /* Debug */,
+				CEA01E2818675E5300F18642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEA01DDE18675E5200F18642 /* Project object */;
+}
